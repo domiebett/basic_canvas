@@ -1,0 +1,22 @@
+body {
+    text-align: center;
+    font-family: sans-serif;
+    border: 1px dotted;
+}
+
+canvas {
+    background-color: black;
+}
+
+canvas#illustration {
+    background-color: white;
+}
+
+.container {
+    display: inline-block;
+    max-width: 900px;
+}
+
+.container > canvas {
+    margin: 15px;
+}
