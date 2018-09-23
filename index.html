@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Basic Canvas Drawing.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="static/css/main.css" />
+</head>
+<body>
+    <h1>Basic Canvas Drawings.</h1>
+
+    <div class="container">
+        <h4>Simple Stick Figure Banner</h4>
+        <canvas id="basic" width="400" height="400"></canvas>
+    </div>
+
+    <div class="container">
+        <h4>Grid with graphs.</h4>
+        <canvas id="grid" width="400" height="400"></canvas>
+    </div>
+
+    <div class="container">
+        <h4>Testing out cos & sin on circle</h4>
+        <p>
+            You can use the Math.cos and Math.sin methods to find the coordinates
+            of a certain point on a circles edge. Based on the horizontal radius,
+            You can find the horizontal or vertical distance that a line drawn from
+            the center of a circle would hit the edge of the circle while drawn at
+            a certain angle(defined in radians) from the horizontal radius.
+        </p>
+        <canvas id="illustration" width="400" height="400"></canvas>
+        <canvas id="cos_and_sin" width="400" height="400"></canvas>
+    </div>
+    <br>
+    <div class="container">
+        <h4>Random Chompy Pacman</h4>
+        <p>Reload page to randomize pacman</p>
+        <canvas id="pacman" width="400" height="400"></canvas>
+        <canvas id="random_pacman" width="400" height="400"></canvas>
+    </div>
+    
+    <div class="container">
+        <h4>Rotate and Translate</h4>
+        <p>
+            Rotation are essential for canvas web designs to rotate items along around
+            a predefined axis. Translating moves the canvas to position specified by
+            the x and y coordinates. Uncontrolled canvas drawings such as the first are
+            caused by using the same canvas instance for every rotation. The .save()
+            and .restore() methods are helpful in ensuring the canvas context instance
+            in use is refreshed after each rotation or translation, or repeated iteration
+            of both.
+        </p>
+        <canvas id="uncontrolled_ship" width="400" height="400"></canvas>
+        <canvas id="controlled_ship" width="400" height="400"></canvas>
+    </div>
+
+    <script data-main="static/js/main" src="static/js/lib/require.js"></script>
+</body>
+</html>
